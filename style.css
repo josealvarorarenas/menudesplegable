@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+.popUpToggle {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.popUpMenu a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.popUpMenu a:hover {
+  text-decoration: underline;
+}
+
+.popUpMenu {
+    display: flex;
+    background-color: rgba(0,0,0,.9);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.popUpMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpMenu ul li {
+  font-weight: bold;
+  font-size: 25px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
